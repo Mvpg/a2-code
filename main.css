@@ -1,0 +1,68 @@
+body {
+	background-color: #bee9e4;
+}
+#banner {
+	background-color: lightgrey;
+	background: linear-gradient(to right, #99ffcc, white , #99ffcc);
+	border-style: groove;
+}
+#aboutme {
+	border-style: groove;
+    border-width: 2px;
+    border-color: lightblue;
+    box-shadow: 0px 2px 2px grey;
+}
+#middlepanel {
+	margin-top: 10px;
+	background-color: lightgrey;
+	margin-left: 21%;
+	width: 58%;
+	border-style: groove;
+	overflow: auto;
+}
+
+#bannerpic {
+	float: right;
+    margin: 5px 20px 10px 5px;
+    border-style: inset;
+    border-width: 7px;
+    border-color: lightblue;
+    padding: 3px;
+    box-shadow: 6px 6px 6px red;
+}
+#leftpanel {
+	float: left;
+	background-color: lightgrey;
+	margin-top: 10px;
+	width: 20%;
+	border-style: groove;
+	overflow: auto;
+}
+
+#rightpanel {
+	float: right;
+	background-color: lightgrey;
+	margin-top: 10px;
+	width: 20%;
+	border-style: groove;
+	overflow: auto;
+}
+@media only screen and (max-width: 640px) {
+    #leftpanel {
+        display: none;
+    }
+    #rightpanel {
+    	display: none;
+    }
+    #middlepanel {
+    	width: 100%;
+    	margin-left: 0%;
+    }
+}
+.clearfloat {
+	clear: both;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	margin-left: 5px;
+}
