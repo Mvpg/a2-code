@@ -9,26 +9,19 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 	</head>
 
-	<script>
-		
-	</script>
-
 	<body>
 		<div id="banner">
 			<img id="bannerpic" src="images/graded.JPG" alt="class.jpg">
-			<h1>Welcome!</h1>
+			<h1 id="Welcome">Welcome!</h1>
 			<h4>Created by Daniel C.</h4>
 
 			<input id="aboutme" type="button" value="About Me!">
-			<p id="infoaboutme">
-				I am a Junior at Mountain View High School.
-			</p>
-			<p id="infoaboutme1">
-				I like to learn at school.
-			</p>
-			<p id="infoaboutme2">
-				I love to spend time on the computer
-			</p>
+			<div id="infoaboutme">
+				<p>I am a Junior at Mountain View High School.</p>
+				<p>I like to learn at school.</p>
+				<p>I love to spend time on the computer</p>
+			</div>
+
 			<br class="clearfloat">
 		</div>
 
@@ -44,6 +37,8 @@
 					<a class="w3-hover-grey" href="#">My Favs<i class="fa fa-caret-down"> </i></a>
 					<div class="w3-dropdown-content w3-white w3-card-4">
 						<a href="http://google.com">Google</a>
+						<a href="http://twitch.tv">Twitch</a>
+						<a href="http://youtube.com">Youtube</a>
 					</div>
 				</li>
 				<li class="w3-dropdown-hover w3-hover-light-grey">
@@ -105,46 +100,60 @@
 			</ul>
 		</div>
 
+		<div id="wrapper">
+			<div id="leftpanel">
+				<h2>Test left float</h2>
+			</div>
+			
+			<div id="rightpanel">
+				<p>This is a test right float</p>
+			</div>
 
-		<div id="leftpanel">
-			<h2>Test left float</h2>
-		</div>
-		
-		<div id="rightpanel">
-			<p>This is a test right float</p>
-		</div>
+			<div id="middlepanel">
+				<div id="slideShow" class="w3-content" style="max-width:600px;position:relative">
+					<div>
+						<div class="w3-display-container mySlides">
+							<img src="images/code.png" style="width:100%" height="360px" alt="code.jpg">
+							<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+								Code
+							</div>
+						</div>
 
-		<div id="middlepanel">
-			<div id="slideShow" class="w3-content" style="max-width:600px;position:relative">
+						<div class="w3-display-container mySlides">
+							<img src="images/class.JPG" style="width:100%" height="360px" alt="class.jpg">
+							<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+								Class
+							</div>
+						</div>
 
-			<div class="w3-display-container mySlides">
-				<img src="images/code.png" style="width:100%" height="360px">
-				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-					code
+						<div class="w3-display-container mySlides">
+							<img src="images/graded.JPG" style="width:100%" height="360px" alt="graded.jpg">
+							<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+								Class
+							</div>
+						</div>
+						<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">[</a>
+						<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">]</a>
+						<script src="js/slideshow.js"></script>
+
+					</div>
+				</div>
+
+				<br>
+
+				<div class="center">
+					<video width="640" height="360" controls>
+						<source src="videos/video_converted.ogg" type="video/ogg">
+						<source src="videos/video_converted2.webm" type="video/webm">
+						<source src="videos/video_converted3.webm" type="video/webm">
+						Your browser does not support the video tag.
+					</video>
 				</div>
 			</div>
 
-			<div class="w3-display-container mySlides">
-				<img src="images/class.JPG" style="width:100%" height="360px">
-				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-					Class
-				</div>
+			<div id="footer">
+				<h1>hi</h1>
 			</div>
-
-			<div class="w3-display-container mySlides">
-				<img src="images/graded.JPG" style="width:100%" height="360px">
-				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-					Class
-				</div>
-			</div>
-
-			<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">[</a>
-			<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">]</a>
-
-		</div>
-
-		<script src="js/slideshow.js"></script>
-		
 		</div>
 
 	</body>
