@@ -1,39 +1,43 @@
-body, html {
-	background-color: #bee9e4;
-	margin:0;
-	padding:0;
-	height:100%;
+body,
+html {
+    background-color: #bee9e4;
+    height: 100%;
+    width: 100%;
 }
-.center { 
-	margin: 0 auto; 
-	width: 640px; 
+
+.center {
+    text-align: center;
 }
+
 #banner {
-	background-color: lightgrey;
-	background: linear-gradient(to right, #99ffcc, white , #99ffcc);
-	border-style: groove;
+    background-color: lightgrey;
+    background: linear-gradient(to right, #99ffcc, white, #99ffcc);
+    border-style: groove;
 }
+
 #aboutme {
-	border-style: groove;
+    border-style: groove;
     border-width: 2px;
     border-color: lightblue;
     box-shadow: 0px 2px 2px grey;
 }
+
 #wrapper {
-	min-height:100%;
-	position:relative;
+    min-height: 100%;
+    position: relative;
 }
+
 #middlepanel {
-	margin-top: 20px;
-	background-color: lightgrey;
-	margin-left: 21%;
-	width: 58%;
-	border-style: groove;
-	overflow: auto;
+    margin-top: 20px;
+    background-color: lightgrey;
+    margin-left: 21%;
+    width: 58%;
+    border-style: groove;
+    overflow: auto;
 }
 
 #bannerpic {
-	float: right;
+    float: right;
     margin: 5px 20px 10px 5px;
     border-style: inset;
     border-width: 7px;
@@ -41,53 +45,75 @@ body, html {
     padding: 3px;
     box-shadow: 6px 6px 6px red;
 }
+
 #leftpanel {
-	float: left;
-	background-color: lightgrey;
-	width: 20%;
-	border-style: groove;
-	overflow: auto;
+    float: left;
+    background-color: lightgrey;
+    width: 20%;
+    border-style: groove;
+    overflow: auto;
 }
 
 #rightpanel {
-	float: right;
-	background-color: lightgrey;
-	width: 20%;
-	border-style: groove;
-	overflow: auto;
+    float: right;
+    background-color: lightgrey;
+    width: 20%;
+    border-style: groove;
+    overflow: auto;
 }
+
 #footer {
-	background-color: lightgrey;
-	border-style: groove;
-	overflow: auto;
-	width:100%;
-	height:80px;
-	position:absolute;
-	bottom:0;
-	left:0;
+    background-color: lightgrey;
+    border-style: groove;
+    overflow: auto;
+    width: 100%;
+    height: 75px;
+    margin-top: 1%;
+    bottom: 0;
+    left: 0;
 }
+
 #content {
-	padding-bottom:80px; /* Height of the footer element */
+    padding-bottom: 75px;
+    /* Height of the footer element */
 }
+
+.videoleft {
+    float: left;
+    width: 45%;
+}
+
+.videoright {
+    float: right;
+    width: 45%;
+}
+
 @media only screen and (max-width: 640px) {
     #leftpanel {
         display: none;
     }
     #rightpanel {
-    	display: none;
+        display: none;
     }
     #footer {
-    	display: none;
+        display: none;
     }
     #middlepanel {
-    	width: 100%;
-    	margin-left: 0%;
+        width: 100%;
+        margin-left: 0%;
     }
 }
+
 .clearfloat {
-	clear: both;
+    clear: both;
 }
 
-h1,h2,h3,h4,h5,h6,p {
-	margin-left: 5px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-left: 5px;
 }
