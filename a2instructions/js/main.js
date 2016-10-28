@@ -11,8 +11,9 @@ $(document).ready(function(){
     });
 
 	$("#Enlarge").click(function() {
-		alert("Test");
-		$(this).css("width:100%");
+		$(this).animate({
+			width: '100%'
+		});
 	});
 
 
