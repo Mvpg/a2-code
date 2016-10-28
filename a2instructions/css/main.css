@@ -20,9 +20,20 @@ p,xmp {
 	overflow: auto;
 }
 #hi {
+	background-color: #cccccc;
+	margin: auto;
+	width: 100%;
+}
+#Enlarge{
+    width:25%;
+}
+.imgresize{
+    max-width:100%;
+    max-height:100%;
 }
 .body-header {
 	background-color: #cccccc;
+
 }
 .text-center {
 	text-align: center;
