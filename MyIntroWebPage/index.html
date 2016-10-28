@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Daniel's Intro Website</title>
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/w3.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	</head>
+
+	<body>
+		<div id="backend">
+			<h1>Welcome!</h1>
+			<h4>Intro Website Created by Daniel</h4>
+			<p>
+				Home school is Mountain View High School. I am  Junior.
+			</p>
+		</div>
+
+		<ul class="w3-navbar w3-card-2 w3-grey">
+			<li>
+				<a href="http://192.168.1.100/a2mcclendon">Mr. M</a>
+			</li>
+			<li>
+				<a href="http://192.168.1.113/a2carlson">Home</a>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-light-grey">
+				<a class="w3-hover-grey" href="#">My Favs<i class="fa fa-caret-down"> </i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://google.com">Google</a>
+				</div>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-light-grey">
+				<a class="w3-hover-grey" href="#">CHS<i class="fa fa-caret-down"> </i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://192.168.1.114/">Eli Tanner</a>
+					<a href="http://192.168.1.114/">Ashley Xu</a>
+					<a href="http://192.168.2.115/a2holbrook">Andrew Holbrook</a>
+					<a href="http://192.168.1.114/">Savannah Crow</a>
+					<a href="http://192.168.1.114/">Robert Gillespie</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-light-grey">
+				<a class="w3-hover-grey" href="#">EHS<i class="fa fa-caret-down"> </i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://192.168.1.114/">Ethan Parks</a>
+					<a href="http://192.168.1.114/">Richard McClure</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-light-grey">
+				<a class="w3-hover-grey" href="#">MA<i class="fa fa-caret-down"> </i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://192.168.1.114/">Bryan Higgins</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-light-grey">
+				<a class="w3-hover-grey" href="#">MHS<i class="fa fa-caret-down"> </i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://192.168.1.114/">Tyler Plaisted</a>
+					<a href="http://192.168.1.114/a2Barajas">Neomi Barajas</a>
+					<a href="http://192.168.1.114/">Tanis Steven Blinn</a>
+					<a href="http://192.168.1.114/">Nicole Cline</a>
+					<a href="http://192.168.1.114/">Vic Saenz</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-light-grey">
+				<a class="w3-hover-grey" href="#">MVHS<i class="fa fa-caret-down"> </i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://192.168.1.113/a2carlson">Daniel Carlson</a>
+					<a href="http://192.168.1.115/a2stefan">Brendon Stefan</a>
+					<a href="http://192.168.1.116/a2gomez">Micah Gomez</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-light-grey">
+				<a class="w3-hover-grey" href="#">RHS<i class="fa fa-caret-down"> </i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://192.168.1.114/">Cole Patterson</a>
+					<a href="http://192.168.1.114/">Andrew Wheeler</a>
+					<a href="http://192.168.1.114/">Alexis Bleak</a>
+					<a href="http://192.168.1.114/">Chase Seeberger</a>
+					<a href="http://192.168.1.114/">David Bridgeman</a>
+				</div>
+			</li>
+
+		</ul>
+
+		<div id="slideShow" class="w3-content" style="max-width:600px;position:relative">
+
+			<div class="w3-display-container mySlides">
+				<img src="images/nebula960620.jpg" style="width:100%" height="360px">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					Nebula
+				</div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+				<img src="images/trail bike.jpg" style="width:100%" height="360px">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					Train bike
+				</div>
+			</div>
+
+			<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">[</a>
+			<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">]</a>
+
+		</div>
+
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = x.length
+				}
+				for ( i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex - 1].style.display = "block";
+			}
+		</script>
+
+		<h2>Welcome to my school page</h2>
+
+		<hr><br>
+
+		<input type="button" id="test" value="Click me">
+
+		<div id="JQ">
+			<h4>The first <strong>line</strong> of text</h4>
+			<h4>The second <strong>line</strong> of text</h4>
+		</div>
+
+		<h4>The third <strong>line</strong> of text</h4>
+		<h4>The fourth <strong>line</strong> of text</h4>
+
+		<br>
+		<hr>
+		<br>
+
+		<!-- Video Three -->
+		<h1>JQ mouseover video three</h3>
+
+		<h1>heading one</h1>
+		<h1>heading two</h1>
+		<h1>heating three</h1>
+		<hr>
+
+	</body>
+</html>

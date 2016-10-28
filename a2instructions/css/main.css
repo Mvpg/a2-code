@@ -1,0 +1,38 @@
+body {
+}
+p,xmp {
+	margin-left: 4px;
+}
+#wrapper {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+#head, .body1, .body2, .body3{
+	width: 100%;
+	height: 100%;
+	background: #FAFAFA;
+	float:left;
+	clear: left;
+}
+#code {
+	overflow: auto;
+}
+#hi {
+}
+.body-header {
+	background-color: #cccccc;
+}
+.text-center {
+	text-align: center;
+}
+
+.center {
+	margin: auto;
+    width: 100%;
+}
+
+.border {
+	background-color: #cccccc;
+}
