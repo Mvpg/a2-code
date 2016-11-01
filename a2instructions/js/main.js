@@ -10,12 +10,17 @@ $(document).ready(function(){
     	});
     });
 
-	$("#Enlarge").click(function() {
-		$(this).animate({
-			width: '100%'
-		});
-	});
+    var flag = true;
+    $("#Enlarge").click(function(e){
+        if(flag)
+            $(e.target).animate({width:'50%'}, 1, function(){
+            });
 
+        else
+            $(e.target).animate({width:'100%'}, 1, function(){
+            });
+        flag=!flag;
+    });
 
 	$("#hi").click(function () {
 		$(this).append('<img src="images/Finishedsnowboard.png" alt="hi">');

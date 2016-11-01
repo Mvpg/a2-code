@@ -24,10 +24,12 @@ p,xmp {
 	margin: auto;
 	width: 100%;
 }
-#Enlarge{
-    width:25%;
+#Enlarge
+{
+    width:50%;
 }
-.imgresize{
+.imgresize
+{
     max-width:100%;
     max-height:100%;
 }
