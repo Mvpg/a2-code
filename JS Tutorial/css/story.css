@@ -1,0 +1,26 @@
+/* CSS for Adventure Game */
+/* Popup container - can be anything you want */
+#RoomDiv {
+    text-align: center;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* The actual popup */
+.popuptext {
+    visibility: hidden;
+    background-color: #eee;
+    text-align: center;
+    border-radius: 6px;
+    padding-right: 8px;
+    padding-left: 8px;
+    line-height: 125%;
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+}
