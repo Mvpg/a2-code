@@ -12,6 +12,7 @@ var RedBox = {
     armor:0,
     strength:0,
     intellect:0,
+    selected:0,
     speed:0
 };
 
@@ -21,7 +22,8 @@ var Ogre = {
 	health:0,
 	armor:0,
 	strength:0,
-	speed:0
+	speed:0,
+	selected:0
 };
 
 var Hero = {
@@ -31,7 +33,8 @@ var Hero = {
     armor:0,
     strength:0,
     intellect:0,
-    speed:0
+    speed:0,
+    selected:0
 };
 
 var Warlock = {
@@ -40,6 +43,7 @@ var Warlock = {
     health:0,
     armor:0,
     intellect:0,
+    selected:0,
     speed:0
 };
 
@@ -49,6 +53,7 @@ var Mage = {
     health:0,
     armor:0,
     intellect:0,
+    selected:0,
     speed:0
 };
 
@@ -58,6 +63,7 @@ var TheWitch = {
     health:0,
     armor:0,
     intellect:0,
+	selected:0,
     speed:0
 };
 
@@ -67,51 +73,52 @@ var Minions = {
     health:0,
     armor:0,
     strength:0,
+    selected:0,
     speed:0
 };
 
-var attack = {
-	HolyStrike: function() {
+var spells = {
+	HolyStrike: function(entity) {
 
     },
 
-	FireBall: function() {
+	FireBall: function(entity) {
 
 	},
 
-	CursedFire: function() {
+	CursedFire: function(entity) {
 
 	},
 
-	GenericAttack: function () {
+	GenericAttack: function (entity) {
 
     },
 
-	IceBolt: function () {
+	IceBolt: function (entity) {
 
     },
 
-	IceBlock: function () {
+	IceBlock: function (entity) {
 
     },
 
-	MeteorStrike: function () {
+	MeteorStrike: function (entity) {
 
     },
 
-	HolyHeal: function () {
+	HolyHeal: function (entity) {
 
     },
 
-	AOEHeal: function () {
+	AOEHeal: function (entity) {
 
     },
 
-	BattleRoar: function () {
+	BattleRoar: function (entity) {
 
     },
 
-	WitchHeal: function () {
+	WitchHeal: function (entity) {
 
     }
 };
@@ -123,7 +130,7 @@ var draw = {
     },
 
 	allEntities: function (entity) {
-		
+
     }
 }
 
@@ -136,15 +143,50 @@ function drawHud(){
 };
 function drawSpells(){
 
-};
+};*/
 
-function spells(entity){
+function actions(entity){
 	if(entity == Hero){
 		if(KeyForSpell){
-			attack.GenericAttack();
+			spells.GenericAttack(entity);
+		}
+		else if (KeyForSpell){
+            spells.AOEHeal(entity);
+		}
+		else if (KeyForSpell){
+            spells.HolyStrike(entity);
+		}
+		else if (KeyForSpell){
+			spells.HolyHeal(entity);
+		}
+		else if (KeyForSpell){
+			spells.BattleRoar(entity);
+		}
+		else{
+			alert("That's not a spell available for Character Hero");
 		}
 	}
-}*/
+    else if(entity == Mage){
+        if(KeyForSpell){
+            spells.GenericAttack(entity);
+        }
+        else if (KeyForSpell){
+            spells.IceBlock(entity);
+        }
+        else if (KeyForSpell){
+            spells.IceBolt(entity);
+        }
+        else if (KeyForSpell){
+            spells.FireBall(entity);
+        }
+        else if (KeyForSpell){
+            spells.MeteorStrike(entity);
+        }
+        else {
+            alert("That's not a spell available for Character Mage");
+		}
+	}
+}
 
 function gameStart() {
     draw.RedBox(RedBox);
