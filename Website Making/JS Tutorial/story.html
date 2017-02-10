@@ -1,0 +1,52 @@
+<!-- This is a comment in HTML -->
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Set the title (appears in browser tab) of the game. -->
+	<title>Cloak of Light</title>
+	<!-- Tell the browser to read in the CSS properties -->
+	<link rel="stylesheet" type="text/css" href="css/story.css">
+	<!-- Tell the browser to read all the JavaScript files -->
+	<script src="js/foyer.js"></script>
+	<script src="js/south.js"></script>
+	<script src="js/hall.js"></script>
+	<script src="js/cloak.js"></script>
+</head>
+
+<style>
+	body{
+		background-image: url('img/background.png');
+	}
+</style>
+
+<body>
+	<!-- Create a division to hold the title of our game. -->
+	<div class="titlePanel">
+		<!-- This is the title and a cool graphic -->
+		<h1>Cloak of Light</h1>
+		<img src='img/decoArt.png' alt="Deco Art Squiggle">
+	</div>
+	<!-- Create a division to hold the inventory for the game -->
+	<div class="inventoryPanel">
+		<!-- Display a picture for our game -->
+		<img id="RoomPic" src="img/foyer.jpg" alt="Room Picture" width="200">
+		<!-- Create a heading for the inventory section -->
+		<h3>Inventory</h3>
+		<!-- Put cool looking graphic under the word inventory -->
+		<img src="img/decoInventory.png" alt="Inventory squiggle" width="150">
+		<!-- This is the paragraph that will keep the inventory list -->
+		<p id="InventoryList"></p>
+	</div>
+	<!-- Create a division to hold the story panel for the game -->
+	<div class="storyPanel">
+		<!-- Create a paragraph where the story will be told -->
+		<p id="RoomDesc">
+			<!-- This is the HTML that is used when our game starts. -->
+			<a href='#' onclick='enterFoyer()'>
+				Click here
+			</a>
+			to start the game.
+		</p>
+	</div>
+</body>
+</html>
